@@ -335,6 +335,7 @@ body {
     padding: 18px var(--space-24);
     text-transform: uppercase;
     max-width: 650px;
+    z-index: 90;
 }
 
 .nav__title h1 {
@@ -344,6 +345,7 @@ body {
   var(--tp-1-size)
 );
   max-width: 11ch;
+  z-index: 100;
 }
 
 .burger-menu {
@@ -710,8 +712,9 @@ body {
 
   .nav__container {
     gap: 130px;
-    padding: 0;
+    padding: 0 80px;
     padding-top: 64px;
+    max-width: 1110px;
   }
 }
 

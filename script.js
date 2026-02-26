@@ -7,6 +7,8 @@ const creations = document.querySelectorAll(".creations__grid .creations__tile a
 
 burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("is-active");
+  const isOpen = burgerMenu.getAttribute("aria-expanded") === "true";
+  burgerMenu.setAttribute("aria-expanded", String(!isOpen));
   navBackdrop.hidden = !navBackdrop.hidden;
   navMenuPanel.hidden = !navMenuPanel.hidden;
   body.classList.toggle("is-nav-open");

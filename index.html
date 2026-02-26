@@ -16,13 +16,22 @@
         <div class="nav__content">
           <div class="logo"><img src="./images/logo.svg" alt=""></div>
           <nav>
-            <div class="burger-menu">
-              <span class="burger-menu-line"></span>
-              <span class="burger-menu-line"></span>
-              <span class="burger-menu-line"></span>
-            </div>
-            <div class="nav__backdrop" hidden></div>
-            <div class="nav__menu-panel" hidden>
+            <button class="burger-menu"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav__menu-panel"
+            >
+              <span class="burger-menu-line" aria-hidden="true"></span>
+              <span class="burger-menu-line" aria-hidden="true"></span>
+              <span class="burger-menu-line" aria-hidden="true"></span>
+            </button>
+            <div class="nav__backdrop" hidden aria-hidden="true"></div>
+            <div class="nav__menu-panel" hidden
+            role="dialog"
+            aria-modal="true"
+            aria-label="Main Menu"
+            >
               <ul class="nav__menu-list tp-5">
                 <li class="nav__menu-item"><a href="#">About</a></li>
                 <li class="nav__menu-item"><a href="#">Careers</a></li>
@@ -132,7 +141,10 @@
     <div class="footer__container">
       <div class="footer__content">
         <div class="footer__logo"><img src="./images/logo.svg" alt=""></div>
-        <ul class="footer__links tp-6">
+        <ul class="footer__links tp-6"
+        role="navigation"
+        aria-label="Footer Navigation"
+        >
           <li class="footer__link"><a href="#">About</a></li>
           <li class="footer__link"><a href="#">Careers</a></li>
           <li class="footer__link"><a href="#">Events</a></li>
