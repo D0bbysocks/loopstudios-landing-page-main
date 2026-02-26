@@ -736,6 +736,8 @@ body {
   
   .nav__container {
     max-width: 1110px;
+    padding: 0;
+    padding-top: 64px;
   }
 
   .nav__title {
@@ -749,11 +751,17 @@ body {
   .nav__menu-panel {
     display: block;
     position: relative;
+    margin-top: 0;
+    padding: 0;
   }
 
 
-  .nav__menu-panel {
-    margin-top: 0;
+  .nav__menu-panel ul {
+    font-family: var(--font-accent);
+    font-weight: var(--fw-regular);
+    font-size: var(--tp-6-size);
+    line-height: var(--tp-6-line);
+    letter-spacing: var(--tp-6-track);
   }
 
   .nav__menu-panel ul {
